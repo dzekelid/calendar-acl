@@ -1,9 +1,10 @@
+---
 swagger: "2.0"
 x-collection-name: Google Calendar
-x-complete: 1
+x-complete: 0
 info:
-  title: Google Calendar
-  description: manipulates-events-and-other-calendar-data-
+  title: Google Calendar Update Calendar ACL
+  description: Updates an access control rule. This method supports patch semantics.
   contact:
     name: Google
     url: https://google.com
@@ -151,24 +152,17 @@ paths:
           description: OK
       tags:
       - Calendar ACL
-    put:
-      summary: Update Calendar ACL
-      description: Updates an access control rule.
-      operationId: calendar.acl.update
-      x-api-path-slug: calendarscalendaridaclruleid-put
-      parameters:
-      - in: body
-        name: body
-        schema:
-          $ref: '#/definitions/holder'
-      - in: path
-        name: calendarId
-        description: Calendar identifier
-      - in: path
-        name: ruleId
-        description: ACL rule identifier
-      responses:
-        200:
-          description: OK
-      tags:
-      - Calendar ACL
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---
